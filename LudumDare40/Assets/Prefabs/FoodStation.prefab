@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4128127374029950}
   - component: {fileID: 61028956532915258}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: CookColider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
