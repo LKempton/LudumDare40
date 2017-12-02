@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetMouseButton(0))
         {
             isOverPlayer = true;
+            Cursor.visible = false;
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector3(transform.position.x, transform.position.y, 0.0f);
         }    
@@ -24,6 +25,7 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetMouseButtonUp(0))
         {
             isOverPlayer = false;
+            Cursor.visible = true;
         }
 
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0.0f));
