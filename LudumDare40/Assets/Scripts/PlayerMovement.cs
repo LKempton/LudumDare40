@@ -7,6 +7,11 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField]
     private CircleCollider2D col;
 
+    [SerializeField]
+    private float xClamp;
+    [SerializeField]
+    private float yClamp;
+
     private bool isOverPlayer = false;
 
     private void OnMouseOver()
@@ -17,6 +22,7 @@ public class PlayerMovement : MonoBehaviour {
             Cursor.visible = false;
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector3(transform.position.x, transform.position.y, 0.0f);
+            transform.position = new Vector3(Mathf.Clamp(transform.position.x, -xClamp, xClamp), Mathf.Clamp(transform.position.y, -yClamp, yClamp));
         }    
     }
 
@@ -38,6 +44,7 @@ public class PlayerMovement : MonoBehaviour {
         {
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector3(transform.position.x, transform.position.y, 0.0f);
+            transform.position = new Vector3(Mathf.Clamp(transform.position.x, -xClamp, xClamp), Mathf.Clamp(transform.position.y, -yClamp, yClamp));
         }
     }
 }
