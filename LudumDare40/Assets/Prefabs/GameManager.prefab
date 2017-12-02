@@ -56,7 +56,7 @@ MonoBehaviour:
   timerImage: {fileID: 0}
   timerDuration: 10
   upperLimit: 20
-  sRemaining: 0
+  sRemaining: 20
 --- !u!114 &114663068922873416
 MonoBehaviour:
   m_ObjectHideFlags: 1
