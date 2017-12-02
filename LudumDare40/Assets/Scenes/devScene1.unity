@@ -187,6 +187,11 @@ Prefab:
       propertyPath: fourthNodes.Array.data[1]
       value: 
       objectReference: {fileID: 371161718}
+    - target: {fileID: 114161664894886604, guid: 79871748fb8d41345a98186da9485323,
+        type: 2}
+      propertyPath: timerImage
+      value: 
+      objectReference: {fileID: 1159618742}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79871748fb8d41345a98186da9485323, type: 2}
   m_IsPrefabParent: 0
