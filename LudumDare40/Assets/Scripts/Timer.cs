@@ -19,12 +19,14 @@ public class Timer : MonoBehaviour {
     {
         sRemaining = timerDuration;
         timerText.text = sRemaining.ToString("n1");
-        while(sRemaining > 0)
+
+        do
         {
             yield return new WaitForSeconds(0.1f);
-            timerText.text = sRemaining.ToString("n1");            
+            timerText.text = sRemaining.ToString("n1");
             sRemaining -= 0.1f;
-        }
+        } while (sRemaining > 0);
+
         Debug.Log("You Died");
     }
 
