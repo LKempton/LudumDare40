@@ -16,6 +16,7 @@ public class Timer : MonoBehaviour {
     {
         //timerText = GetComponent<Text>();
         StartCoroutine(TimerUpdate());
+        timerImage.enabled = true;
 	}
 	
     IEnumerator TimerUpdate()
@@ -23,6 +24,7 @@ public class Timer : MonoBehaviour {
         sRemaining = timerDuration;
         //timerText.text = sRemaining.ToString("n1");
         float timerPercentage = sRemaining / upperLimit;
+        timerImage.fillAmount = timerPercentage;
 
         do
         {
