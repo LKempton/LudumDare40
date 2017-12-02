@@ -21,9 +21,10 @@ public class Timer : MonoBehaviour {
         timerText.text = sRemaining.ToString("n1");
         while(sRemaining > 0)
         {
-            sRemaining -= 0.1f;
+            
             timerText.text = sRemaining.ToString("n1");
             yield return new WaitForSeconds(0.1f);
+            sRemaining -= 0.1f;
         }
         Debug.Log("You Died");
     }

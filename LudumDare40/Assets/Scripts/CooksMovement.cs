@@ -21,7 +21,7 @@ public class CooksMovement : MonoBehaviour {
         {
             transform.Rotate(0, 0, Random.Range(0, 359.999f));
             rbody.velocity = transform.right * speed;
-            yield return new WaitForSeconds(movementRate + Random.RandomRange(-0.5f*randomRange,0.5f*randomRange));
+            yield return new WaitForSeconds(movementRate + Random.Range(-0.5f*randomRange,0.5f*randomRange));
         }
     }
 
