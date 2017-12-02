@@ -19,5 +19,9 @@ public class PlayerCollsion : MonoBehaviour {
 
             lg.TriggerNode(node);
         }
+        else if (col.gameObject.CompareTag("Cook"))
+        {
+            lg.FailureState();
+        }
     }
 }

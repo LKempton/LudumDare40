@@ -68,11 +68,16 @@ public class LevelGeneration : MonoBehaviour {
         }
         else if (node != nextNode)
         {
-            Debug.Log("Wrong node");
-            nextIndex = 0;
-            nextNode = nodePath[nextIndex];
-            TogglePulses(nextNode);
+            FailureState();
         }
+    }
+
+    public void FailureState()
+    {
+        Debug.Log("Wrong node");
+        nextIndex = 0;
+        nextNode = nodePath[nextIndex];
+        TogglePulses(nextNode);
     }
 
     void DisableAllPulses()
