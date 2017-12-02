@@ -183,9 +183,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 203b9cfbe630a054c97bec6c99ea1b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  movementRate: 3
-  randomRange: 2
+  speed: 1
+  movementRate: 1.5
+  randomRange: 0.5
 --- !u!212 &136489137
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -394,7 +394,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -498,9 +498,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 203b9cfbe630a054c97bec6c99ea1b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  movementRate: 3
-  randomRange: 2
+  speed: 1
+  movementRate: 1.5
+  randomRange: 0.5
 --- !u!212 &545628455
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -584,9 +584,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 203b9cfbe630a054c97bec6c99ea1b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  movementRate: 3
-  randomRange: 2
+  speed: 1
+  movementRate: 1.5
+  randomRange: 0.5
 --- !u!212 &856373986
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -760,9 +760,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 203b9cfbe630a054c97bec6c99ea1b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  movementRate: 3
-  randomRange: 2
+  speed: 1
+  movementRate: 1.5
+  randomRange: 0.5
 --- !u!212 &867452163
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -891,9 +891,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 203b9cfbe630a054c97bec6c99ea1b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  movementRate: 3
-  randomRange: 2
+  speed: 1
+  movementRate: 1.5
+  randomRange: 0.5
 --- !u!212 &876310243
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1117,9 +1117,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 203b9cfbe630a054c97bec6c99ea1b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  movementRate: 3
-  randomRange: 2
+  speed: 1
+  movementRate: 1.5
+  randomRange: 0.5
 --- !u!212 &1052075703
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1248,9 +1248,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 203b9cfbe630a054c97bec6c99ea1b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  movementRate: 3
-  randomRange: 2
+  speed: 1
+  movementRate: 1.5
+  randomRange: 0.5
 --- !u!212 &1372719734
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1474,9 +1474,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 203b9cfbe630a054c97bec6c99ea1b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  movementRate: 3
-  randomRange: 2
+  speed: 1
+  movementRate: 1.5
+  randomRange: 0.5
 --- !u!212 &1553373636
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1700,9 +1700,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 203b9cfbe630a054c97bec6c99ea1b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  movementRate: 3
-  randomRange: 2
+  speed: 1
+  movementRate: 1.5
+  randomRange: 0.5
 --- !u!212 &2146792105
 SpriteRenderer:
   m_ObjectHideFlags: 0
