@@ -21,6 +21,8 @@ public class LevelGeneration : MonoBehaviour {
     {
         GeneratePath();
 
+        DisableAllPulses();
+
         nextIndex = 0;
         nextNode = nodePath[nextIndex];
 
