@@ -7,12 +7,19 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField]
     private CircleCollider2D col;
 
+    private LevelGeneration lg;
+
     [SerializeField]
     private float xClamp;
     [SerializeField]
     private float yClamp;
 
     private bool isOverPlayer = false;
+
+    private void Start()
+    {
+        lg = GameObject.FindWithTag("GameController").GetComponent<LevelGeneration>();
+    }
 
     private void OnMouseOver()
     {
@@ -32,6 +39,7 @@ public class PlayerMovement : MonoBehaviour {
         {
             isOverPlayer = false;
             Cursor.visible = true;
+            lg.FailureState();
         }
 
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0.0f));
