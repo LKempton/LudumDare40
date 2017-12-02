@@ -50,13 +50,8 @@ public class OverlayPulse : MonoBehaviour {
                     t += Time.deltaTime / duration;
                     yield return null;
                 }
-
                 isRising = true;
             }
-
- 
         }
-
-
     }
 }

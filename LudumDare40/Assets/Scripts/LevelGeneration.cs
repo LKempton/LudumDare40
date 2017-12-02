@@ -10,4 +10,6 @@ public class LevelGeneration : MonoBehaviour {
     private GameObject[] secondNodes;
     [SerializeField]
     private GameObject[] thirdNodes;
+    [SerializeField]
+    private GameObject[] fourthNodes;
 }
