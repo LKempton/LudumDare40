@@ -25,6 +25,12 @@ public class CooksMovement : MonoBehaviour {
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log("Collision occured");
+        transform.Rotate(0, 0, 180, Space.Self);
+    }
+
     private void OnDestroy()
     {
         StopAllCoroutines();
