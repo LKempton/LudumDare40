@@ -92,3 +92,6 @@ MonoBehaviour:
   fourthNodes:
   - {fileID: 0}
   - {fileID: 0}
+  cookSpawn: {fileID: 0}
+  cookPrefab: {fileID: 1099915615379230, guid: fe928d0222ef0304eac8ad4039731b5e, type: 2}
+  cookParent: {fileID: 0}

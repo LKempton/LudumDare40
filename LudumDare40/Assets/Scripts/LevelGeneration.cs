@@ -13,20 +13,53 @@ public class LevelGeneration : MonoBehaviour {
     [SerializeField]
     private GameObject[] fourthNodes;
 
+    [SerializeField]
+    private GameObject cookSpawn;
+    [SerializeField]
+    private GameObject cookPrefab;
+    [SerializeField]
+    private GameObject cookParent;
+    [SerializeField]
+    private int maxCookSpawn = 15;
+    private int currentCookCount = 0;
+
+    private Transform[] cookSpawnLocations;
+    
+
     private GameObject nextNode;
     private int nextIndex = 0;
     private GameObject[] nodePath;
+    
 
     private void Start()
     {
         GeneratePath();
 
         DisableAllPulses();
+        cookSpawnLocations = cookSpawn.GetComponentsInChildren<Transform>();
+
+        SpawnCook();
 
         nextIndex = 0;
         nextNode = nodePath[nextIndex];
 
         Invoke("IntiateGame", 3);
+    }
+
+    void SpawnCook()
+    {
+        if (currentCookCount>= maxCookSpawn)
+        {
+            return;
+        }
+        currentCookCount++;
+
+        GameObject newCook = GameObject.Instantiate(cookPrefab);
+
+        newCook.transform.position = cookSpawnLocations[Random.Range((int)0, cookSpawnLocations.Length - 1)].position;
+
+        newCook.transform.Rotate(0, 0, Random.Range(0,359.999f));
+        newCook.transform.parent = cookParent.transform;
     }
 
     void IntiateGame()
@@ -61,6 +94,7 @@ public class LevelGeneration : MonoBehaviour {
             nextIndex++;
             if (nextIndex >= nodePath.Length)
             {
+                SpawnCook();
                 GameManager.instance.GainPoints(1);
                 GeneratePath();
                 nextIndex = 0;
