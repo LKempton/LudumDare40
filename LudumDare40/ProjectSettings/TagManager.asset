@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Node
   - Cook
+  - CookHolder
   layers:
   - Default
   - TransparentFX
