@@ -53,6 +53,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstNodes:
   - {fileID: 0}
+  - {fileID: 0}
   secondNodes:
   - {fileID: 0}
   - {fileID: 0}
@@ -60,4 +61,5 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   fourthNodes:
+  - {fileID: 0}
   - {fileID: 0}
