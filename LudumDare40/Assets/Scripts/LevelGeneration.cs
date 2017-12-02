@@ -55,12 +55,11 @@ public class LevelGeneration : MonoBehaviour {
         {
             Debug.Log("Correct Node");
 
-            GameManager.instance.GainPoints(1);
-
+            
             nextIndex++;
-
             if (nextIndex >= nodePath.Length)
             {
+                GameManager.instance.GainPoints(1);
                 GeneratePath();
                 nextIndex = 0;
             }
