@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour {
 
     public static GameManager instance;
     int points = 0;
+    [SerializeField]
+    float RewardTime = 0.0f;
 
     private CookSize[] cooks;
         
@@ -22,6 +24,8 @@ public class GameManager : MonoBehaviour {
     public void GainPoints(int amount)
     {
         points += amount;
+
+        gameObject.GetComponent<Timer>().AddTime(RewardTime);
 
         for (int i = 0; i < cooks.Length; i++)
         {
