@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50394441105977212}
   - component: {fileID: 58722197057039170}
   - component: {fileID: 114851092861010652}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cook
   m_TagString: Cook
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSize: 3
-  stepSize: 0.1
+  stepSize: 0.05
 --- !u!212 &212665944864361062
 SpriteRenderer:
   m_ObjectHideFlags: 1
