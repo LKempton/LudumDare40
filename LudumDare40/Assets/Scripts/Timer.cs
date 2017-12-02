@@ -34,9 +34,9 @@ public class Timer : MonoBehaviour {
         StartCoroutine(TimerUpdate());
     }
 
-    public void RestartTimer(float value)
+    public void RestartTimer(float duration)
     {
-        timerDuration = value;
+        timerDuration = duration;
         StopCoroutine(TimerUpdate());
         StartCoroutine(TimerUpdate());
     }
