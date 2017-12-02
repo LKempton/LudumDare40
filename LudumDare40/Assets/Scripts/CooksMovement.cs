@@ -19,7 +19,7 @@ public class CooksMovement : MonoBehaviour {
     {
         while (true)
         {
-            transform.Rotate(0, 0, Random.Range(0, 359.999f));
+            transform.Rotate(0, 0, Random.Range(-90f, 90f), Space.Self);
             rbody.velocity = transform.right * speed;
             yield return new WaitForSeconds(movementRate + Random.Range(-0.5f*randomRange,0.5f*randomRange));
         }

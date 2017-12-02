@@ -187,6 +187,11 @@ Prefab:
       propertyPath: fourthNodes.Array.data[1]
       value: 
       objectReference: {fileID: 371161718}
+    - target: {fileID: 114161664894886604, guid: 79871748fb8d41345a98186da9485323,
+        type: 2}
+      propertyPath: timerImage
+      value: 
+      objectReference: {fileID: 1159618742}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79871748fb8d41345a98186da9485323, type: 2}
   m_IsPrefabParent: 0
@@ -943,10 +948,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1170,14 +1175,14 @@ RectTransform:
   m_GameObject: {fileID: 1159618740}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.997845, y: 1.9978449, z: 1.9978449}
   m_Children: []
   m_Father: {fileID: 959617930}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 540, y: 234}
+  m_AnchoredPosition: {x: 881, y: 352}
   m_SizeDelta: {x: 54, y: 54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1159618742
@@ -1186,7 +1191,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1159618740}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
