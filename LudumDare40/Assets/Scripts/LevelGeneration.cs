@@ -14,21 +14,21 @@ public class LevelGeneration : MonoBehaviour {
     private GameObject[] fourthNodes;
 
     private GameObject nextNode;
-    private int nextIndex;
+    private int nextIndex = 0;
     private GameObject[] nodePath;
 
     private void Start()
-    {
-        Invoke("IntiateGame", 3);
-    }
-
-    void IntiateGame()
     {
         GeneratePath();
 
         nextIndex = 0;
         nextNode = nodePath[nextIndex];
 
+        Invoke("IntiateGame", 3);
+    }
+
+    void IntiateGame()
+    {
         TogglePulses(nextNode);
     }
 
