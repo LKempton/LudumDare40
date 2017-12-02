@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour {
     Text timerText;
     [SerializeField]
-    float timerDuration = 10;
+    float timerDuration = 10, upperLimit = 20;
     private float sRemaining;
 	// Use this for initialization
 	void Start ()
@@ -33,6 +33,15 @@ public class Timer : MonoBehaviour {
     {
         StopCoroutine(TimerUpdate());
         StartCoroutine(TimerUpdate());
+    }
+
+    public void AddTime(float amount)
+    {
+        sRemaining += amount;
+        if (sRemaining> upperLimit)
+        {
+            sRemaining = upperLimit;
+        }
     }
 
     public void RestartTimer(float duration)
