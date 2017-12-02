@@ -15,11 +15,20 @@ public class OverlayPulse : MonoBehaviour {
     [SerializeField]
     private float pulseSpeed;
 
+    private bool isOn = false;
+
     private void OnEnable()
     {
         StartCoroutine(ColourPulse(pulseSpeed));
     }
 
+    public void TogglePulse()
+    {
+        if (isOn)
+            overlay.enabled = false;
+        else if (!isOn)
+            overlay.enabled = true;
+    }
 
     IEnumerator ColourPulse(float duration)
     {
