@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField]
     private GameObject gameoverText;
+    [SerializeField]
+    Text pointsText;
+
     private bool isGameover = false;
 
     // Audio
@@ -78,6 +81,7 @@ public class GameManager : MonoBehaviour {
     public void GainPoints(int amount)
     {
         points += amount;
+        pointsText.text = "Points: " + points.ToString();
 
         gameObject.GetComponent<Timer>().AddTime(RewardTime);
 

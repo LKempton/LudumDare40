@@ -51,7 +51,7 @@ public class Timer : MonoBehaviour {
 
     public void AddTime(float amount)
     {
-        Debug.Log("Added time");
+
 
         sRemaining += amount;
         if (sRemaining> upperLimit)
