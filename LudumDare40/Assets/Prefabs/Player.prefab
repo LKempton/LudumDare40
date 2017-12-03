@@ -91,8 +91,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: {fileID: 58054833337730282}
-  xClamp: 18.23
-  yClamp: 9.73
+  xClamp: 19.52
+  yClamp: 10.38
 --- !u!114 &114848153319208610
 MonoBehaviour:
   m_ObjectHideFlags: 1
