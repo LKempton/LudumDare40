@@ -33,6 +33,7 @@ public class LevelGeneration : MonoBehaviour {
 
     [SerializeField]
     private GameObject readyText;
+    private bool gameHasStarted;
 
     private void Start()
     {
@@ -48,6 +49,7 @@ public class LevelGeneration : MonoBehaviour {
 
         //Invoke("IntiateGame", 1);
 
+        gameHasStarted = false;
         StartCoroutine(StartTime());
     }
 
@@ -116,10 +118,13 @@ public class LevelGeneration : MonoBehaviour {
 
     public void FailureState()
     {
-        GameManager.instance.SmashAudio();
-        nextIndex = 0;
-        nextNode = nodePath[nextIndex];
-        TogglePulses(nextNode);
+        if (gameHasStarted)
+        {
+            GameManager.instance.SmashAudio();
+            nextIndex = 0;
+            nextNode = nodePath[nextIndex];
+            TogglePulses(nextNode);
+        }
     }
 
     void DisableAllPulses()
@@ -161,6 +166,7 @@ public class LevelGeneration : MonoBehaviour {
 
         yield return new WaitForSeconds(2f);
 
+        gameHasStarted = true;
         readyText.SetActive(false);
         readyText.GetComponent<Text>().text = "Ready?";
 

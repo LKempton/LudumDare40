@@ -1224,7 +1224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1651270305}
-  offset: {x: 2, y: -1, z: 0}
+  offset: {x: 2.5, y: -1.5, z: 0}
 --- !u!1 &1162459020 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1836918435304188, guid: 7b6b5eaf1c9ff18428fab65eca93a9a5,
@@ -1665,7 +1665,7 @@ BoxCollider2D:
   m_Offset: {x: 0.5111995, y: 0.02556014}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 1, y: 1}
     oldSize: {x: 3.3600001, y: 1.132}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
