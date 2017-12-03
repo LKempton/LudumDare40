@@ -501,6 +501,16 @@ Prefab:
       propertyPath: m_Name
       value: EndStation (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 198732360296849736, guid: 4605a66b64152b045807d2e64acb86d3,
+        type: 2}
+      propertyPath: lengthInSec
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 198732360296849736, guid: 4605a66b64152b045807d2e64acb86d3,
+        type: 2}
+      propertyPath: randomSeed
+      value: -2133321287
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4605a66b64152b045807d2e64acb86d3, type: 2}
   m_IsPrefabParent: 0
@@ -728,14 +738,6 @@ Prefab:
     - target: {fileID: 1836918435304188, guid: 7b6b5eaf1c9ff18428fab65eca93a9a5, type: 2}
       propertyPath: m_Name
       value: StartStation (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4866235938900882, guid: 7b6b5eaf1c9ff18428fab65eca93a9a5, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4866235938900882, guid: 7b6b5eaf1c9ff18428fab65eca93a9a5, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b6b5eaf1c9ff18428fab65eca93a9a5, type: 2}
@@ -1087,54 +1089,6 @@ Prefab:
       propertyPath: m_Name
       value: CookingStation (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 4873183674070130, guid: f8d2bfac9762fb7448a018d9d9506fe4, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4873183674070130, guid: f8d2bfac9762fb7448a018d9d9506fe4, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 212358218801644176, guid: f8d2bfac9762fb7448a018d9d9506fe4,
-        type: 2}
-      propertyPath: m_FlipY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 212551310310967046, guid: f8d2bfac9762fb7448a018d9d9506fe4,
-        type: 2}
-      propertyPath: m_FlipY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 61572099851390410, guid: f8d2bfac9762fb7448a018d9d9506fe4,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -0.10314983
-      objectReference: {fileID: 0}
-    - target: {fileID: 61572099851390410, guid: f8d2bfac9762fb7448a018d9d9506fe4,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 1.0737003
-      objectReference: {fileID: 0}
-    - target: {fileID: 61572099851390410, guid: f8d2bfac9762fb7448a018d9d9506fe4,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 61572099851390410, guid: f8d2bfac9762fb7448a018d9d9506fe4,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 1.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 61582226661329806, guid: f8d2bfac9762fb7448a018d9d9506fe4,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -0.13615772
-      objectReference: {fileID: 0}
-    - target: {fileID: 61582226661329806, guid: f8d2bfac9762fb7448a018d9d9506fe4,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.86945873
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f8d2bfac9762fb7448a018d9d9506fe4, type: 2}
   m_IsPrefabParent: 0
@@ -1382,21 +1336,6 @@ Prefab:
     - target: {fileID: 4913510297943000, guid: 4605a66b64152b045807d2e64acb86d3, type: 2}
       propertyPath: m_RootOrder
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 212543877420824016, guid: 4605a66b64152b045807d2e64acb86d3,
-        type: 2}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 212543877420824016, guid: 4605a66b64152b045807d2e64acb86d3,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212858096360157104, guid: 4605a66b64152b045807d2e64acb86d3,
-        type: 2}
-      propertyPath: m_FlipX
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4605a66b64152b045807d2e64acb86d3, type: 2}
