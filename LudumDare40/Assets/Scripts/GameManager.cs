@@ -16,6 +16,18 @@ public class GameManager : MonoBehaviour {
     [SerializeField]
     private GameObject gameoverText;
     private bool isGameover = false;
+
+    // Audio
+    [SerializeField]
+    private AudioSource stationAudio;
+    [SerializeField]
+    private AudioClip[] stationClip;
+
+    [SerializeField]
+    private AudioSource musicAudio;
+    [SerializeField]
+    private AudioSource smashAudio;
+
         
     private void Awake()
     {
@@ -39,6 +51,22 @@ public class GameManager : MonoBehaviour {
             Time.timeScale = 1.0f;
             SceneManager.LoadScene(0);
         }
+    }
+
+    public void PlayStationAudio(int clip)
+    {
+        stationAudio.clip = stationClip[clip];
+        stationAudio.Play();
+    }
+
+    public void PlayMusic()
+    {
+        musicAudio.Play();
+    }
+
+    public void SmashAudio()
+    {
+        smashAudio.Play();
     }
 
 

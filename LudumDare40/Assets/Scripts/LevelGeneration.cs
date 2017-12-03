@@ -29,7 +29,6 @@ public class LevelGeneration : MonoBehaviour {
     private GameObject nextNode;
     private int nextIndex = 0;
     private GameObject[] nodePath;
-    
 
     private void Start()
     {
@@ -88,7 +87,7 @@ public class LevelGeneration : MonoBehaviour {
     {
         if (node == nextNode)
         {
-            Debug.Log("Correct Node");
+            GameManager.instance.PlayStationAudio(nextIndex);
 
             
             nextIndex++;
@@ -111,7 +110,7 @@ public class LevelGeneration : MonoBehaviour {
 
     public void FailureState()
     {
-        Debug.Log("D E D");
+        GameManager.instance.SmashAudio();
         nextIndex = 0;
         nextNode = nodePath[nextIndex];
         TogglePulses(nextNode);
