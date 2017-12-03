@@ -1,0 +1,30 @@
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 780 Ti (ID=0x100a)
+    Vendor:   NVIDIA
+    VRAM:     3013 MB
+    Driver:   22.21.13.8494
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Lee\Documents\Unity Games and Projects\LD40\Game Build\BigManBroth_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Lee\Documents\Unity Games and Projects\LD40\Game Build\BigManBroth_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Lee\Documents\Unity Games and Projects\LD40\Game Build\BigManBroth_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Lee\Documents\Unity Games and Projects\LD40\Game Build\BigManBroth_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Lee\Documents\Unity Games and Projects\LD40\Game Build\BigManBroth_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Lee\Documents\Unity Games and Projects\LD40\Game Build\BigManBroth_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Lee\Documents\Unity Games and Projects\LD40\Game Build\BigManBroth_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Lee\Documents\Unity Games and Projects\LD40\Game Build\BigManBroth_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.015 seconds
+Platform assembly: C:\Users\Lee\Documents\Unity Games and Projects\LD40\Game Build\BigManBroth_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Lee\Documents\Unity Games and Projects\LD40\Game Build\BigManBroth_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 144Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.491549 ms
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 2454 -> priority: 1 
+  Thread -> id: 28f8 -> priority: 1 
+  Thread -> id: 307c -> priority: 1 
+  Thread -> id: 2068 -> priority: 1 
