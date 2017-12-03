@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour {
     public void GainPoints(int amount)
     {
         points += amount;
-        //pointsText.text = "Points: " + points.ToString();
+        pointsText.text = "Points: " + points.ToString();
 
         gameObject.GetComponent<Timer>().AddTime(RewardTime);
 
