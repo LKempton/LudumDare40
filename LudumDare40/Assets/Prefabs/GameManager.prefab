@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9aeb9b10e0b6534b8f7e1454edc0fd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RewardTime: 10
+  RewardTime: 5
 --- !u!114 &114688147443897650
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -95,3 +95,4 @@ MonoBehaviour:
   cookSpawn: {fileID: 0}
   cookPrefab: {fileID: 1099915615379230, guid: fe928d0222ef0304eac8ad4039731b5e, type: 2}
   cookParent: {fileID: 0}
+  maxCookSpawn: 15
