@@ -16,11 +16,15 @@ public class Timer : MonoBehaviour {
     {
         //timerText = GetComponent<Text>();
         StartCoroutine(TimerUpdate());
-        timerImage.enabled = true;
+        
 	}
 	
     IEnumerator TimerUpdate()
     {
+        yield return new WaitForSeconds(3f);
+
+        timerImage.enabled = true;
+
         sRemaining = timerDuration;
         //timerText.text = sRemaining.ToString("n1");
         float timerPercentage = sRemaining / upperLimit;

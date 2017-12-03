@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelGeneration : MonoBehaviour {
 
@@ -30,6 +31,9 @@ public class LevelGeneration : MonoBehaviour {
     private int nextIndex = 0;
     private GameObject[] nodePath;
 
+    [SerializeField]
+    private GameObject readyText;
+
     private void Start()
     {
         GeneratePath();
@@ -42,7 +46,9 @@ public class LevelGeneration : MonoBehaviour {
         nextIndex = 0;
         nextNode = nodePath[nextIndex];
 
-        Invoke("IntiateGame", 3);
+        //Invoke("IntiateGame", 1);
+
+        StartCoroutine(StartTime());
     }
 
     void SpawnCook()
@@ -137,5 +143,26 @@ public class LevelGeneration : MonoBehaviour {
         {
             fourthNodes[i].GetComponent<OverlayPulse>().TogglePulse(false);
         }
+    }
+
+    IEnumerator StartTime()
+    {
+        readyText.SetActive(true);
+
+        yield return new WaitForSeconds(1.5f);
+
+        IntiateGame();
+
+        readyText.GetComponent<Text>().text = "Steady?";
+
+        yield return new WaitForSeconds(1.5f);
+
+        readyText.GetComponent<Text>().text = "COOK!";
+
+        yield return new WaitForSeconds(2f);
+
+        readyText.SetActive(false);
+        readyText.GetComponent<Text>().text = "Ready?";
+
     }
 }
