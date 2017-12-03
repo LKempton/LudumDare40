@@ -217,25 +217,7 @@ Prefab:
       propertyPath: timerImage
       value: 
       objectReference: {fileID: 1159618742}
-    - target: {fileID: 114663068922873416, guid: 79871748fb8d41345a98186da9485323,
-        type: 2}
-      propertyPath: stationAudio
-      value: 
-      objectReference: {fileID: 607170183}
-    - target: {fileID: 114663068922873416, guid: 79871748fb8d41345a98186da9485323,
-        type: 2}
-      propertyPath: musicAudio
-      value: 
-      objectReference: {fileID: 607170181}
-    - target: {fileID: 114663068922873416, guid: 79871748fb8d41345a98186da9485323,
-        type: 2}
-      propertyPath: smashAudio
-      value: 
-      objectReference: {fileID: 607170182}
-    m_RemovedComponents:
-    - {fileID: 82417633317079862, guid: 79871748fb8d41345a98186da9485323, type: 2}
-    - {fileID: 82968908119430692, guid: 79871748fb8d41345a98186da9485323, type: 2}
-    - {fileID: 82809117695190092, guid: 79871748fb8d41345a98186da9485323, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79871748fb8d41345a98186da9485323, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &27797839
@@ -631,21 +613,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1319944506874900, guid: f8d2bfac9762fb7448a018d9d9506fe4,
     type: 2}
   m_PrefabInternal: {fileID: 1346563735}
---- !u!82 &607170181 stripped
-AudioSource:
-  m_PrefabParentObject: {fileID: 82722208928052580, guid: 79871748fb8d41345a98186da9485323,
-    type: 2}
-  m_PrefabInternal: {fileID: 21443214}
---- !u!82 &607170182 stripped
-AudioSource:
-  m_PrefabParentObject: {fileID: 82170789197341700, guid: 79871748fb8d41345a98186da9485323,
-    type: 2}
-  m_PrefabInternal: {fileID: 21443214}
---- !u!82 &607170183 stripped
-AudioSource:
-  m_PrefabParentObject: {fileID: 82495781325696318, guid: 79871748fb8d41345a98186da9485323,
-    type: 2}
-  m_PrefabInternal: {fileID: 21443214}
 --- !u!1001 &791022426
 Prefab:
   m_ObjectHideFlags: 0
