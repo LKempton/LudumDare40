@@ -4,9 +4,12 @@ using UnityEngine;
 public class UIActions : MonoBehaviour {
 
     [SerializeField]
-    private GameObject panel;
+    private GameObject tutorialPanel;
+    [SerializeField]
+    private GameObject creditsPanel;
 
-    private bool isOpen = false;
+    private bool isTutorialOpen = false;
+    private bool isCreditsOpen = false;
 
     public void LoadMainScene()
     {
@@ -15,15 +18,29 @@ public class UIActions : MonoBehaviour {
 
     public void ShowTutorial()
     {
-        if (isOpen)
+        if (isTutorialOpen)
         {
-            panel.SetActive(false);
-            isOpen = false;
+            tutorialPanel.SetActive(false);
+            isTutorialOpen = false;
         }
-        else if (!isOpen)
+        else if (!isTutorialOpen)
         {
-            panel.SetActive(true);
-            isOpen = true;
+            tutorialPanel.SetActive(true);
+            isTutorialOpen = true;
+        }
+    }
+
+    public void ShowCredits()
+    {
+        if (isCreditsOpen)
+        {
+            creditsPanel.SetActive(false);
+            isCreditsOpen = false;
+        }
+        else if (!isCreditsOpen)
+        {
+            creditsPanel.SetActive(true);
+            isCreditsOpen = true;
         }
     }
 }
