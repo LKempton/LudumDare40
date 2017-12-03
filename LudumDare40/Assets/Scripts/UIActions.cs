@@ -43,4 +43,9 @@ public class UIActions : MonoBehaviour {
             isCreditsOpen = true;
         }
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
