@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: ce4d6fea8b463d748a2e4a45a5cc3f53
+timeCreated: 1512308181
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Revorioum
+  fontNames:
+  - Revorioum
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
