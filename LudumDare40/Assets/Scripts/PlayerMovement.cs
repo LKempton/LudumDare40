@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
-    [SerializeField]
-    private CircleCollider2D col;
+   
+    //private CircleCollider2D col;
 
     private LevelGeneration lg;
 
@@ -44,7 +44,9 @@ public class PlayerMovement : MonoBehaviour {
 
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0.0f));
 
-        float radius = col.radius;
+        //float radius = col.radius;
+
+        float radius = 1.013132f;
 
         float difference = Vector3.Distance(transform.position, mousePos);
 
