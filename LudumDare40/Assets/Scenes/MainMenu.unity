@@ -355,8 +355,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 484385787}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.97, y: -0.01, z: 0}
-  m_LocalScale: {x: 1.5374501, y: 1.5374501, z: 1.5374501}
+  m_LocalPosition: {x: 4.05, y: -0.47, z: 0}
+  m_LocalScale: {x: 1.6298245, y: 1.6298245, z: 1.6298245}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -579,7 +579,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -749, y: -473}
+  m_AnchoredPosition: {x: -749, y: 143}
   m_SizeDelta: {x: 379, y: 81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &729485276
@@ -875,15 +875,15 @@ RectTransform:
   m_GameObject: {fileID: 1317387241}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9581277, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1546766846}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: 0}
-  m_SizeDelta: {x: 857, y: 546}
+  m_AnchoredPosition: {x: -16.5, y: -0.0000038147}
+  m_SizeDelta: {x: 857, y: 562.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1317387243
 MonoBehaviour:
@@ -920,9 +920,10 @@ MonoBehaviour:
   m_Text: "Complete orders by moving between the four different flashing stations.
     \n\nMake sure you go to the right one or you'll fail the order. Be careful not
     to bump into the chefs or you'll have to start over. \n\nAs you complete orders
-    the chefs will get fatter and more numerous.\n\nHold the mouse to move your character,
-    being careful not to let go and drop the food. Make sure you complete all orders
-    before you run out of time."
+    the chefs will get fatter and more numerous. Too many cooks will spoil the Big
+    Man Broth.\n\nHold the mouse to move your character, being careful not to let
+    go and drop the food. Make sure you complete all orders before you run out of
+    time."
 --- !u!222 &1317387244
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -954,7 +955,7 @@ RectTransform:
   m_GameObject: {fileID: 1546766845}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2124751, y: 1, z: 1}
   m_Children:
   - {fileID: 1317387242}
   m_Father: {fileID: 185123022}
@@ -962,8 +963,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -493.5, y: -114}
-  m_SizeDelta: {x: -1030, y: -501}
+  m_AnchoredPosition: {x: -401, y: -215}
+  m_SizeDelta: {x: -1030, y: -478}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1546766847
 MonoBehaviour:
