@@ -35,7 +35,8 @@ public class Timer : MonoBehaviour {
             timerImage.fillAmount = timerPercentage;
         } while (sRemaining > 0);
 
-        Debug.Log("You Died");
+        
+        GameManager.instance.GameOver();
     }
 
     public void RestartTimer()

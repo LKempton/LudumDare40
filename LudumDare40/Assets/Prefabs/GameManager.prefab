@@ -69,6 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RewardTime: 5
+  gameoverText: {fileID: 0}
 --- !u!114 &114688147443897650
 MonoBehaviour:
   m_ObjectHideFlags: 1
