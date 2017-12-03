@@ -151,11 +151,11 @@ public class LevelGeneration : MonoBehaviour {
 
         yield return new WaitForSeconds(1.5f);
 
-        IntiateGame();
-
         readyText.GetComponent<Text>().text = "Steady?";
 
         yield return new WaitForSeconds(1.5f);
+
+        IntiateGame();
 
         readyText.GetComponent<Text>().text = "COOK!";
 
