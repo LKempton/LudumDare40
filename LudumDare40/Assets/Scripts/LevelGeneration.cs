@@ -94,8 +94,8 @@ public class LevelGeneration : MonoBehaviour {
         if (node == nextNode)
         {
             GameManager.instance.PlayStationAudio(nextIndex);
+            node.GetComponent<ParticleSystem>().Play();
 
-            
             nextIndex++;
             if (nextIndex >= nodePath.Length)
             {
