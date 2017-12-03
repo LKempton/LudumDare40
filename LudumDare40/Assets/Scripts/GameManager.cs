@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour {
     [SerializeField]
     private GameObject gameoverText;
     [SerializeField]
+    private GameObject gameoverImage;
+    [SerializeField]
     Text pointsText;
 
     private bool isGameover = false;
@@ -48,6 +50,7 @@ public class GameManager : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.R) && isGameover)
         {
             gameoverText.SetActive(false);
+            gameoverImage.SetActive(false);
             isGameover = false;
             Time.timeScale = 1.0f;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -55,6 +58,7 @@ public class GameManager : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.Escape) && isGameover)
         {
             gameoverText.SetActive(false);
+            gameoverImage.SetActive(false);
             isGameover = false;
             Time.timeScale = 1.0f;
             SceneManager.LoadScene(0);
@@ -97,6 +101,7 @@ public class GameManager : MonoBehaviour {
     {
         Debug.Log("You Died");
         gameoverText.SetActive(true);
+        gameoverImage.SetActive(true);
         isGameover = true;
         Time.timeScale = 0.0f;
     }

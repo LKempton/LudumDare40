@@ -313,6 +313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RewardTime: 5
   gameoverText: {fileID: 0}
+  gameoverImage: {fileID: 0}
   pointsText: {fileID: 0}
   stationAudio: {fileID: 82495781325696318}
   stationClip:
