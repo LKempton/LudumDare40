@@ -35,6 +35,11 @@ public class GameManager : MonoBehaviour {
         cooks = new List<CookSize>();
     }
 
+    private void Start()
+    {
+        PlayMusic();
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.R) && isGameover)
