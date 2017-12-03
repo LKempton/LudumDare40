@@ -166,7 +166,7 @@ MonoBehaviour:
   overlay: {fileID: 212551310310967046}
   start: {r: 0, g: 0.6392157, b: 0.003921569, a: 0}
   end: {r: 0, g: 0.6392157, b: 0.003921569, a: 1}
-  pulseSpeed: 1
+  pulseSpeed: 0.5
 --- !u!212 &212358218801644176
 SpriteRenderer:
   m_ObjectHideFlags: 1
